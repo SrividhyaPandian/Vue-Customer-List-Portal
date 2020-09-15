@@ -1,0 +1,128 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+// Common CSS
+body {
+    background-color: #e9ecefa3;
+}
+.vue-template-wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+// Login CSS
+.login-wrapper {
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: 8px;
+    width: 75%;
+    margin:0 auto;
+    background-color: #fff;
+    .login-form {
+        padding: 25px 50px;
+        .form-group {
+            label {
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+        .btn {
+            width: 100%;
+            margin: 15px 0;
+            background-color: #be5256;
+        }
+    }
+    .auth-action {
+        padding: 0 50px;
+        p {
+            .signUp-footer {
+                padding-left: 5px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+// Manage Customer CSS
+.custom-wrapper {
+    .manageCustomer-wrapper {
+        .userDetails {
+            padding-bottom: 35px;
+            text-align: right;
+            .activeUser {
+                font-weight: 500;
+                font-size: 18px;
+                font-style: italic;
+                padding-right: 15px;
+                color: #be5256;
+                text-transform: capitalize;
+            }
+            .logOut {
+                cursor: pointer;
+            }
+        }
+        ul {
+            list-style-type: none;
+            display: table;
+            width: 100%;
+            padding: 0;
+            &.customUl {
+                padding: 0 15px;
+            }
+            li {
+                display: table-cell;
+                h3 {
+                    color: rgb(72, 74, 96);
+                }
+                .btn {
+                    background-color:  rgb(72, 74, 96);
+                    color: #fff;
+                }
+            }
+        }
+        .table {
+            border: 1px solid rgba(0,0,0,0.125);
+            th {
+                color: rgb(72, 74, 96);
+            }
+        }
+    }
+}
+// Custom Form component CSS
+.custom-form-wrapper {
+    .form-wrapper {
+        .row {
+            .col {
+                .form-group {
+                    label {
+                        text-align: left;
+                        font-size: 12px;
+                    }
+                    input {
+                        opacity: 0.7;
+                    }
+                }
+            }
+            &.custom-btns {
+                float: right;
+                padding-right: 15px;
+                ul {
+                    list-style-type: none;
+                    display: inline-block;
+                    width: 100%;
+                    padding: 0;
+                    li {
+                        padding-right: 15px;
+                        .btn {
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Address Modal CSS
+.modal-footer {
+    .btn {
+        background-color:  rgb(72, 74, 96);
+        color: #fff;
+    }
+}
